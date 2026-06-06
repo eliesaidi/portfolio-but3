@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérifier - Expertise SNCF | Portfolio Eliès AÏDI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-competence">
+
+    <div class="navigation-top">
+        <div class="container">
+            <a href="index.html" class="btn-retour">← Retour au portfolio</a>
+        </div>
+    </div>
+
+    <header class="header-competence">
+        <div class="container">
+            <span class="badge">Compétence 2 : Vérifier</span>
+            <h1>Expertise Technique Moteur</h1>
+            <p class="ac-titre">Apprentissage Critique : Évaluer la cause racine d'un dysfonctionnement (AC32.01)</p>
+        </div>
+    </header>
+
+    <div class="container contenu-cdtr">
+
+        <section class="bloc-cdtr bloc-contexte">
+            <h2>1. Contexte &amp; Enjeux</h2>
+            <p>Dans le cadre de mon alternance chez SNCF Voyageurs, j'ai été amené à expertiser deux moteurs de traction ferroviaire suite à des vibrations anormales. Pour la série de moteurs concernée, ce retour alors jugé précoce m'a conduit à mettre en place une série de tests électriques pour en évaluer la cause racine. Étant habilité aux risques électriques et formé aux mesures d'isolement, aux mesures vibratoires et aux mesures de pertes fer, j'ai pu rejoindre la plateforme d'essai dynamique du technicentre industriel de Vénissieux pour diagnostiquer les deux moteurs.</p>
+        </section>
+
+        <section class="bloc-cdtr bloc-demarche">
+            <h2>2. Démarche Technique</h2>
+            <p>À la manière d'un médecin, avant de procéder aux tests et aux démontages des moteurs, nous avons mené une enquête préliminaire visant à les ordonnancer : l'objectif est de cibler efficacement les pièces les plus probablement endommagées à ce stade de vie du moteur. Dans notre cas, les roulements — de petits mécanismes métalliques destinés à transmettre un mouvement rotatif — sont les causes principales des retours prématurés. Nous avons procédé en trois étapes :</p>
+            <ul>
+                <li><strong>Phase de test statique :</strong> Avant de démarrer les moteurs, nous avons effectué des tests d'isolement à l'aide d'un analyseur de moteur statique ADX1-5-RLC de Megger. Grâce à la fonctionnalité de mégohmmètre, nous avons vérifié l'absence de courts-circuits entre phases, et entre phases et neutre.</li>
+                <li><strong>Reproduction des anomalies et test dynamique :</strong> Notre objectif a été de reproduire les vibrations observées sur le terrain. Pour ce faire, nous avons alimenté ces moteurs sur la plateforme d'essai dynamique et avons enregistré les vibrations et bruits émis. Nous avons également vérifié l'équilibrage des phases à l'aide de pinces ampèremétriques, réalisé des mesures vibratoires, et utilisé une caméra acoustique pour localiser les sources de bruit. Les résultats ont signalé un défaut de roulement côté pignon : pas de déséquilibre entre phases, test d'isolement conforme, mais des amplitudes anormales dans les hautes fréquences et un bruit localisé au niveau du roulement concerné. Cette analyse vaut pour les deux moteurs (voir Trace 1).</li>
+            </ul>
+            <ul>
+                <li><strong>Démontage et analyse de défauts :</strong> Le défaut étant localisé, nous avons procédé au démontage du moteur (séparation du stator et du rotor) pour vérifier la qualité du circuit magnétique du stator à travers une mesure de pertes fer (résultat en Trace 2). Nous avons également inspecté chaque pièce mécanique : mesure de l'équilibrage du rotor, contrôle des couples de serrage des écrous, et vérification de l'absence de traces de frottements ou de passages anormaux de courant.</li>
+            </ul>
+        </section>
+
+        <section class="bloc-cdtr bloc-traces">
+            <h2>3. Traces</h2>
+
+            <div class="trace-item">
+                <h3>Trace 1 : Rapport de test électrique complet</h3>
+                <p>Déroulez le rapport PDF ci-dessous pour consulter le détail des tests effectués en plateforme.</p>
+                <iframe src="Rapport_expertise.pdf" class="lecteur-pdf" title="Rapport d'expertise SNCF"></iframe>
+            </div>
+
+            <div class="trace-item">
+                <h3>Trace 2 : Rapport de test Pertes Fer</h3>
+                <p>Résultat des mesures électriques obtenues sur le banc de test de pertes fer CL60B.</p>
+                <img src="Rapport_pertes-fer.jpg" alt="Rapport de test pertes fer" class="image-trace">
+            </div>
+        </section>
+
+        <section class="bloc-cdtr bloc-recul">
+            <h2>4. Prise de Recul</h2>
+            <p>Cette expertise m'a conduit à adopter une posture d'ingénieur de maintenance. Avec une approche logique et rigoureuse, j'ai réalisé une série de quatre tests électriques statiques et dynamiques, puis procédé à un démontage pour une inspection mécanique complète (vérification de l'équilibrage, des couples de serrage, de l'état général des pièces : pignons, roulements, demi-accouplement, flasque, balais…). Ce type d'expertise illustre parfaitement la complémentarité entre la mécanique et l'électrique, et m'incite à acquérir un profil plus généraliste pour répondre à chaque problématique d'ingénierie de maintenance.</p>
+        </section>
+
+    </div>
+  <section class="section-faq">
+        <div class="container">
+            <h2 class="titre-section">Foire Aux Questions</h2>
+            
+            <div class="faq-conteneur">
+                
+                <details class="faq-item">
+                    <summary>Qu'est-ce qu'une mesure vibratoire ?</summary>
+                    <div class="faq-reponse">
+                        <p>Les mesures vibratoires s'effectuent à l'aide d'accéléromètres, avec pour objectif de mesurer des vibrations inaudibles afin d'obtenir un spectre fréquentiel. Ce spectre permet de distinguer l'état d'usure de chaque pièce du moteur en fonction de sa fréquence. Pour réussir une mesure vibratoire, de nombreuses précautions s'imposent : le support sur lequel est installé le moteur (rigide), les zones de fixation des accéléromètres (à proximité des roulements, sur une zone statique du moteur), et le mode de fixation des accéléromètres (collés sur pastille, vissés au moteur, éviter les pointes de touche).</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Qu'est-ce qu'un test de pertes fer ?</summary>
+                    <div class="faq-reponse">
+                        <p>Voir la compétence Installer avec le banc de test de pertes fer. L'objectif de ce test est de reproduire le champ magnétique d'un moteur en fonctionnement en injectant un courant fort (jusqu'à 2000A) à travers le circuit magnétique d'un moteur à l'arret. Cela produira des echauffements et des pertes de puissances que nous mesurons.</p>
+                    </div>
+                </details>
+</details>
+
+                <details class="faq-item">
+                    <summary>Qu'est-ce qu'un roulement?</summary>
+                    <div class="faq-reponse">
+                        <p>Voir la compétence Maintenir avec l'étude de coût global de roulement vs roulement hybride.Il s'agit d'une pièce mécanique qui fait le pont entre une zone rotative du moteur, le rotor, et une zone statique du moteur, le stator. Concrètement c'est un anneau composé d'une bague interrieure rotative, de billes ou de rouleaux, et d'une bague exterrieure fixe.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

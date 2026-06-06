@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenir - Étude des coûts SNCF | Portfolio Eliès AÏDI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-competence">
+
+    <div class="navigation-top">
+        <div class="container">
+            <a href="index.html" class="btn-retour">← Retour au portfolio</a>
+        </div>
+    </div>
+
+    <header class="header-competence">
+        <div class="container">
+            <span class="badge">Compétence 3 : Maintenir</span>
+            <h1>Évaluation des coûts d'indisponibilité (Moteurs de Traction)</h1>
+            <p class="ac-titre">Apprentissage Critique : Évaluer les coûts d'indisponibilité et de maintenance d'un système (AC33.02)</p>
+        </div>
+    </header>
+
+    <div class="container contenu-cdtr">
+
+        <section class="bloc-cdtr bloc-contexte">
+            <h2>1. Contexte &amp; Enjeux</h2>
+            <p>Lors de ma 3ème année de BUT GEII, en enseignement de <strong>sûreté de fonctionnement</strong>, j'ai appris à quantifier la fiabilité d'un système via des grandeurs comme le <strong>MTBF (Mean Time Between Failures)</strong> ou <strong>le taux de défaillance λ(t)</strong>. Ces indicateurs m'ont montré qu'une pièce peu fiable entraîne des pannes répétées, donc des coûts de maintenance corrective élevés (main-d'œuvre, immobilisation, pièces de rechange).</p>
+            <p>Ces notions m'ont été utiles lors de mon alternance à la SNCF, où j'ai suivi un ingénieur dans l'évaluation des coûts de maintenance liés à la modification d'une pièce critique : <strong>un roulement de moteur de traction.</strong> L'étude visait à comparer le coût global de deux scénarios : conserver la pièce existante (avec ses pannes récurrentes) ou la remplacer par une version modifiée (plus chère à l'achat, mais plus fiable). Mon rôle a consisté à analyser les données de fiabilité, estimer <strong>les coûts d'indisponibilité</strong> et participer au calcul du <strong>retour sur investissement</strong> de la modification.</p>
+        </section>
+
+        <section class="bloc-cdtr bloc-demarche">
+            <h2>2. Démarche Technico-Économique</h2>
+            <p>L'étude a été menée sur quatre fonctions du système de traction. <em>Note : pour des raisons de confidentialité liées à la concurrence ferroviaire, les données chiffrées exactes sont anonymisées.</em></p>
+            <ul>
+                <li><strong>Exploitation des données de fiabilité :</strong> Analyse des historiques d'interventions pour estimer les fréquences de défaillance et calculer les <strong>MTBF</strong> en appliquant les modèles de sûreté de fonctionnement (courbe en baignoire).</li>
+                <li><strong>Modélisation de scénarios :</strong> Comparaison du scénario « classique » avec trois scénarios d'amélioration (réduction des défaillances de 60 %, 70 % et 80 % via l'intégration de roulements hybrides).</li>
+                <li><strong>Décomposition des coûts globaux :</strong> Évaluation chiffrée de tous les postes de dépenses liés aux pannes : prix de la pièce de rechange, temps de main-d'œuvre, logistique, et pénalités liées à l'immobilisation du train.</li>
+                <li><strong>Analyse du Retour sur Investissement (ROI) :</strong> Mise en regard du surcoût d'investissement initial du roulement hybride face à la diminution drastique des déposes nécessaires sur la durée de vie du moteur.</li>
+            </ul>
+        </section>
+
+        <section class="bloc-cdtr bloc-traces">
+            <h2>3. Traces &amp; Preuves</h2>
+
+            <div class="trace-item">
+                <h3>Trace 1 : Étude comparative des roulements</h3>
+                <p>Synthèse de l'analyse démontrant que, malgré un coût unitaire supérieur, la diminution des pannes du roulement hybride rend le système globalement plus rentable.</p>
+                <iframe src="Etude_comparative_roulements.pdf" class="lecteur-pdf" title="Étude comparative des coûts de maintenance"></iframe>
+            </div>
+        </section>
+
+        <section class="bloc-cdtr bloc-recul">
+            <h2>4. Prise de Recul</h2>
+            <p>Cette mission a été un véritable déclic : elle m'a permis de faire le pont entre la théorie mathématique de la fiabilité et la réalité économique industrielle. J'ai pris conscience que le rôle d'un ingénieur ne se limite pas à recommander la solution techniquement la plus performante. Il doit avant tout justifier ses choix par des analyses d'impact argumentées (coût global, indisponibilité). C'est une compétence transversale fondamentale que je compte réinvestir dans ma carrière professionnelle.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
