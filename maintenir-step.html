@@ -28,20 +28,6 @@
             <h2>1. Contexte &amp; Enjeux</h2>
             <p>Lors de mon stage à la station d'épuration de Pierre-Bénite (Grand Lyon), j'ai intégré l'équipe de maintenance EIA (Électricité, Instrumentation, Automatisation). J’ai travaillé sur de nombreuses installations électriques pour des opérations de maintenance corrective. L’une d’entre elles concernait un clarificateur : c’est un bassin en forme de cercle dans lequel une plateforme tournante métallique munies de herses pousse des boues vers l'extérieur, tandis qu’une pompe d’aspersion au centre tire les eaux pour les acheminer vers le Rhône. Ainsi, avec mon équipe, nous avons dû intervenir sur une pompe d'aspersion suite à une demande nous informant que le disjoncteur porte fusible qui protégeait l’installation a sauté, et les fusibles ont fondu. 
 </p>
-        </section>
-
-        <section class="bloc-cdtr bloc-demarche">
-            <h2>2. Démarche de Diagnostic</h2>
-            <p>La recherche de panne s'est déroulée en plusieurs étapes analytiques et pratiques sur le terrain :</p>
-            <ul>
-                <li><strong>Mise en sécurité et vérification initiale :</strong> Consignation électrique de l'installation et réalisation d'un test de continuité dans le local électrique pour écarter l'hypothèse d'un faux contact ou d'une erreur de raccordement.</li>
-                <li><strong>Premier test de redémarrage :</strong> Remplacement du sectionneur et des fusibles (suspectés d'être usés par l'âge), suivi d'une déconsignation. Le système a immédiatement disjoncté à nouveau, confirmant un défaut matériel plus profond.</li>
-                <li><strong>Re-consignation et test d'isolement :</strong> Utilisation d'un mégohmmètre faire réaliser un test d'isolement. Ce test consiste à appliquer une tension de 230 V ou de 400 V suivant le test (entre phase et neutre, entre 2 phases), et de mesurer la résistance. Si c’est isolé, on devrait mesurer une résistance infini, et l’afficheur du testeur d’isolement devrait afficher 20 MΩ. Au contraire, si ce n’est pas bien isolé, on devrait trouver une résistance nulle ou faible (de l’ordre du kΩ ou moins). Nous avons mesuré une résistance de quelques kΩ entre 2 phases , nous avons conclu cette intervention en disant que la pompe était mal isolée, et avons rédigé une demande pour l’équipe de maintenance mécanique.</li>
-            </ul>
-        </section>
-
-        <section class="bloc-cdtr bloc-traces">
-            <h2>3. Traces &amp; Preuves</h2>
 
             <div class="trace-item">
                 <h3>Trace 1 : Le Clarificateur</h3>
@@ -49,11 +35,23 @@
                 <img src="clarificateur.jpg" alt="Photo du clarificateur de la STEP" class="image-trace">
             </div>
 
+        </section>
+
+        <section class="bloc-cdtr bloc-demarche">
+            <h2>2. Démarche de Diagnostic</h2>
+            <p>La recherche de panne s'est déroulée en plusieurs étapes analytiques et pratiques sur le terrain :</p>
+
             <div class="trace-item">
                 <h3>Trace 2 : Schéma électrique de l'alimentation</h3>
                 <p>Schéma utilisé pour repérer les raccordements et le disjoncteur porte-fusibles lors du test de continuité.</p>
                 <img src="schema_pompe.jpg" alt="Schéma électrique de la pompe d'aspersion" class="image-trace">
             </div>
+
+            <ul>
+                <li><strong>Mise en sécurité et vérification initiale :</strong> Consignation électrique de l'installation et réalisation d'un test de continuité dans le local électrique pour écarter l'hypothèse d'un faux contact ou d'une erreur de raccordement.</li>
+                <li><strong>Premier test de redémarrage :</strong> Remplacement du sectionneur et des fusibles (suspectés d'être usés par l'âge), suivi d'une déconsignation. Le système a immédiatement disjoncté à nouveau, confirmant un défaut matériel plus profond.</li>
+                <li><strong>Re-consignation et test d'isolement :</strong> Utilisation d'un mégohmmètre faire réaliser un test d'isolement. Ce test consiste à appliquer une tension de 230 V ou de 400 V suivant le test (entre phase et neutre, entre 2 phases), et de mesurer la résistance. Si c’est isolé, on devrait mesurer une résistance infini, et l’afficheur du testeur d’isolement devrait afficher 20 MΩ. Au contraire, si ce n’est pas bien isolé, on devrait trouver une résistance nulle ou faible (de l’ordre du kΩ ou moins). Nous avons mesuré une résistance de quelques kΩ entre 2 phases , nous avons conclu cette intervention en disant que la pompe était mal isolée, et avons rédigé une demande pour l’équipe de maintenance mécanique.</li>
+            </ul>
         </section>
 
         <section class="bloc-cdtr bloc-recul">
