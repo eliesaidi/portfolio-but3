@@ -243,6 +243,12 @@ body {
     margin-top: -30px;
     font-size: 0.95em;
 }
+.sous-titre1 {
+    color: #f1c40f;
+    margin-bottom: 50px;
+    margin-top: -30px;
+    font-size: 0.95em;
+}
 
 .grille-projets {
     display: grid;
@@ -578,4 +584,59 @@ body {
     margin-top: 5px;
     padding-top: 15px;
     line-height: 1.6;
+}
+.cv-download {
+    margin-top: 25px;
+}
+
+.btn-cv {
+    background-color: #f1c40f; /* Fond jaune vif */
+    color: #2c3e50;            /* Texte sombre pour une lisibilité parfaite */
+    border: 2px solid #f1c40f;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-cv:hover {
+    background-color: #d4ac0d; /* Jaune légèrement plus foncé au survol */
+    border-color: #d4ac0d;
+    color: #111;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(241, 196, 15, 0.4);
+}
+/* =========================================
+   SURLIGNAGE JAUNE DES NOUVEAUTÉS (FRISE) - TEXTE UNIQUEMENT
+========================================= */
+.timeline-item.nouveau-jaune .date,
+.timeline-item.nouveau-jaune .content h3,
+.timeline-item.nouveau-jaune .content p,
+.timeline-item.nouveau-jaune .content ul,
+.timeline-item.nouveau-jaune .content strong {
+    color: #f1c40f; /* Applique le jaune vif uniquement au texte */
+}
+
+/* On garde le point de la frise chronologique en jaune pour la cohérence */
+.timeline-item.nouveau-jaune::before {
+    background: #f1c40f; 
+    border-color: #f1c40f;
+}
+/* =========================================
+   CORRECTION COULEUR BLANCHE - FRISE CHRONOLOGIQUE
+========================================= */
+.section-bleue .timeline-item .content p,
+.section-bleue .timeline-item .content strong,
+.section-bleue .timeline-item .content li {
+    color: #ffffff; /* Force le texte normal en blanc */
+}
+
+/* On s'assure que tes nouvelles expériences gardent bien la couleur jaune demandée précédemment */
+.section-bleue .timeline-item.nouveau-jaune .content p,
+.section-bleue .timeline-item.nouveau-jaune .content strong,
+.section-bleue .timeline-item.nouveau-jaune .content li {
+    color: #f1c40f; 
 }
