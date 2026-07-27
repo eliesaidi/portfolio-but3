@@ -35,6 +35,13 @@
             <p>Pour mener à bien cette conception, j'ai organisé le travail de l'équipe autour de trois grands axes, que j'ai ensuite synthétisés dans notre dossier de conception :</p>
             <ul>
                 <li><strong>Modélisation et Simulation (SIMBA) :</strong> Avant toute manipulation matérielle, nous avons conçu une reproduction de notre projet sous SIMBA. Ce choix était stratégique : il nous a permis d'intégrer notre code en langage C (destiné au microcontrôleur) directement dans un environnement simulant la batterie, le pont onduleur, le moteur et la chaîne d'acquisition (pédales, capteurs de position du rotor et sondes de courant). L'onduleur agissant comme le véritable « cerveau » du moteur, cette étape a permis de valider notre logique de commande (asservissement de courant) sans prendre de risque.</li>
+
+ 	   <div class="trace-item">
+                <h3>Trace 1 : Reproduction numérique de notre projet</h3>
+                <p>La conception et la simulation du projet sous SIMBA ont joué un rôle capital. Regroupant la batterie (DC1), le module 6 IGBT (IGBT 1 à 6 avec diode de recouvrement), le moteur (machine synchrone à aimants permanents, PMSM1), mais aussi et surtout le microcontrôleur (C3), cet outil rassemble l'intégralité du système sur une interface fonctionnelle.</p>
+                <img src="simba.jpg" alt="Capture d'écran de la simulation SIMBA" class="image-trace">
+            </div>
+
                 <li><strong>Prototypage matériel :</strong> Nous avons ensuite repris un prototype à échelle réduite. Cela a impliqué la réalisation d'une carte de puissance intégrant un module de 6 IGBT, ainsi que l'étalonnage et le conditionnement des différents capteurs.</li>
                 <li><strong>Programmation et essais :</strong> L'intégration du code C dans le microcontrôleur a permis de piloter la carte de puissance. Grâce au travail préalable en simulation, la mise en service a été grandement facilitée, aboutissant à la rotation effective du moteur en marche avant selon une consigne d'accélération.</li>
             </ul>
@@ -50,17 +57,7 @@
                 <li>L'explication détaillée de la commande vectorielle et des codes implémentés.</li>
                 <li>Les procédures de test et d'étalonnage des capteurs.</li>
                 <li>Nos résultats et les pistes d'amélioration.</li>
-            </ul>
-        </section>
-
-        <section class="bloc-cdtr bloc-traces">
-            <h2>4. Traces</h2>
-
-            <div class="trace-item">
-                <h3>Trace 1 : Reproduction numérique de notre projet</h3>
-                <p>La conception et la simulation du projet sous SIMBA ont joué un rôle capital. Regroupant la batterie (DC1), le module 6 IGBT (IGBT 1 à 6 avec diode de recouvrement), le moteur (machine synchrone à aimants permanents, PMSM1), mais aussi et surtout le microcontrôleur (C3), cet outil rassemble l'intégralité du système sur une interface fonctionnelle.</p>
-                <img src="simba.jpg" alt="Capture d'écran de la simulation SIMBA" class="image-trace">
-            </div>
+            </ul>          
 
             <div class="trace-item">
                 <h3>Trace 2 : Extrait du Dossier de Conception (livrable final)</h3>
@@ -77,7 +74,7 @@
     </div>
 
 </body>
-<section class="section-faq">
+  <section class="section-faq">
         <div class="container">
             <h2 class="titre-section">Foire Aux Questions</h2>
             
